@@ -1,0 +1,26 @@
+[
+  {
+    "user": {
+      "id": 4,
+      "name": "Bob",
+      "age": 22
+    },
+    "product": {
+      "id": 2,
+      "name": "mobile",
+      "price": 500
+    }
+  },
+  {
+    "user": {
+      "id": 1,
+      "name": "John",
+      "age": 30
+    },
+    "product": {
+      "id": 3,
+      "name": "tablet",
+      "price": 300
+    }
+  }
+]
