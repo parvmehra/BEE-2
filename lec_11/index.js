@@ -42,8 +42,17 @@ res.innerText=  'hello world'  //we can only use strings here(setter)
 console.log(res.getAttribute("id"))
 // res.setAttribute("class","usingjs");  //setter 
 
+
+//2. only for class attribute
+//* classList
+let myH = document.querySelector(".h2");
+console.log(myH.classList);
+myH.classList.add("hi");
+myH.classList.remove("h2");
 let btn = document.querySelector(".btn")
+let form = document.querySelector(".signup");
 btn.addEventListener("click",()=>{
-    res.setAttribute("class","js")
+    form.classList.toggle("hide");
 })
+
 
