@@ -2,7 +2,7 @@
 //1. using id
 let res = document.getElementById("mydiv");
 //console.log(res);
-console.dir(res);
+console.dir(res);  //to console in object format
 
 
 //2. using class
