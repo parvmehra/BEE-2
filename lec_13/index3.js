@@ -12,7 +12,7 @@ let todos = [{
 }
 ]
 let ul = document.querySelector(".list");
-function createTodoELement() {
+function createTodoELement(todo) {
     let li = document.createElement("li");
     li.setAttribute("id",`${todo.id}`);
     li.innerHTML = `<div>
