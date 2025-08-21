@@ -27,9 +27,15 @@ function checkAdmin(req,res,next) {
         message : "you are not an admin"
     })
 
+}
+
+function isLogin(req,res,next) {
+    console.log("running islogin middleware");
+    next();
     
 }
 
 module.exports.m1 = m1;
 module.exports.m2 = m2;
 module.exports.checkAdmin = checkAdmin;
+module.exports.isLogin = isLogin;

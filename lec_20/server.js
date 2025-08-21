@@ -6,6 +6,7 @@ const PORT = 3069;
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
+const blogRoutes = require('./routes/blogRoutes.js');
 
 app.use(m1);
 
@@ -16,7 +17,7 @@ app.get('/home',(req,res,next)=>{
         succes : true,
         message : "welcome to the home page"
     })
-    next();
+    
 });
 app.use(m2);
 
@@ -28,6 +29,8 @@ app.get('/dashboard',checkAdmin,(req,res)=>{
         })
     }
 })
+
+app.use('/api/blogs', blogRoutes);
 app.listen(PORT,()=>{
     console.log("server is running on port", PORT);
     
